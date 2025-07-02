@@ -156,6 +156,7 @@ form{
     color: #ff0000;
 }
 
+
 @media (max-width: 425px) {
 
     /* HEADER */
@@ -299,4 +300,3 @@ form{
         padding: 10px;
     }
 }
-
