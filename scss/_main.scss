@@ -1,0 +1,28 @@
+@use "variables";
+@use "mixins";
+#objetos {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 600px 600px;
+  text-align: center;
+
+  img {
+    padding: 50px;
+    width: auto;
+    height: 400px;
+  }
+
+  div {
+    color: #4d4d5c;
+    font-size: 20px;
+    margin: 15px 0;
+  }
+}
+
+.page-product {
+  @include mixins.card-style;
+}
+
+form {
+  color: variables.$color-primary;
+}

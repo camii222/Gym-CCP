@@ -1,0 +1,32 @@
+@use "variables";
+#banner {
+  padding: 0 50px;
+  background-position: center;
+
+  &::before {
+    content: '';
+    background: variables.$color-bg-overlay;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0;
+  }
+
+  .contenido-banner {
+    position: relative;
+    color: variables.$color-primary;
+    height: 150%;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      font-size: 30px;
+      font-weight: 20px;
+      padding: 25px 350px;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

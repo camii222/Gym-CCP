@@ -1,0 +1,20 @@
+@use "variables";
+@use "mixins";
+header {
+  height: 100px;
+  background-color: variables.$color-secondary;
+  padding: 0 50px;
+  @include mixins.flex-center;
+  justify-content: space-between;
+
+  .tituloo {
+    margin: 10px;
+    color: white;
+  }
+
+  .logo {
+    align-items: end;
+    height: 50px;
+    width: auto;
+  }
+}

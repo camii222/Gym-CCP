@@ -1,0 +1,31 @@
+@use "variables";
+%button-base {
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid variables.$color-primary;
+  margin-top: 15px;
+  transition: all 0.4s;
+}
+
+.boton-saber-mas {
+  @extend %button-base;
+  color: variables.$color-primary;
+
+  &:hover {
+    background-color: variables.$color-primary;
+    color: white;
+  }
+}
+
+.menu {
+  a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+  }
+}
+
+.dropdown-menu {
+  border: none;
+}
