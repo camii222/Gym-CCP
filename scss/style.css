@@ -12,6 +12,10 @@
   margin-top: 15px;
   transition: all 0.4s;
 }
+.text-sedes {
+  text-align: start;
+  padding: 10px;
+}
 .boton-saber-mas {
   color: #ff0000;
 }
@@ -19,52 +23,33 @@
   background-color: #ff0000;
   color: white;
 }
-.navbar {
-  margin: 0;
-  padding: 0;
-  flex-grow: 1;
-  display: flex;
-  justify-content: flex-end;
-}
 .menu a {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0 10px;
 }
-.offcanvas-body .nav-link {
-  padding: 15px 10px;
-  font-size: 18px;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-
-.offcanvas-header {
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-.dropdown-menu {
-  border: none;
-}
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: stretch;
+  justify-content: space-evenly;
   flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: center;
   padding: 10px 20px;
   background-color: #dc3545;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
-
+.menu-logo {
+  width: 40px;
+  height: auto;
+}
 .header-left {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-.logo {
-  height: 40px;
-  width: auto;
 }
 .encabezado {
   padding: 10px 20px;
@@ -79,24 +64,6 @@ header {
   justify-content: space-between;
   flex-wrap: nowrap;
 }
-
-
-.logo-titulo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.tituloo {
-  font-size: 20px;
-  color: white;
-  margin: 0;
-}
-.navbar-toggler {
-  border: 1px solid white;
-  padding: 6px 10px;
-  border-radius: 5px;
-}
-
 #banner {
   height: 80px; 
   display: flex;
@@ -124,7 +91,9 @@ header {
   padding: 50px;
   display: grid;
   grid-template-columns: 600px 600px;
+  gap: 30px;
   text-align: center;
+  justify-content: center; 
 }
 #objetos img {
   padding: 50px;
@@ -141,7 +110,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 20px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -182,8 +151,9 @@ form input[type="submit"] {
 }
 
 #imagen-nosotros {
-  width: 200px;
-  margin-right: 50px;
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
 }
 
 #texttt {
@@ -193,7 +163,10 @@ form input[type="submit"] {
   display: block;
   align-items: center;
 }
-
+.text-rutinas {
+  background-color: #ff6666;
+  color: black;
+}
 #objetos-sedes {
   padding: 0 50px;
   display: flex;
@@ -247,25 +220,27 @@ html, body {
 body > footer {
   margin-top: auto;
 }
-.logo-menu {
-  height: 30px;
-  width: auto;
+
+.logo {
+  height: 40px;
+}
+
+.tituloo {
+  font-size: 20px;
+  color: white;
+  margin: 0;
+}
+
+.navbar-toggler-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (max-width: 425px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    padding: 10px;
-    flex-wrap: nowrap;
-  }
-  .logo {
-    height: 32px;
-  }
-  .tituloo {
-    font-size: 18px;
-  }
   .dropdown {
     margin-top: 10px;
     width: 100%;
@@ -284,12 +259,6 @@ body > footer {
     font-size: 20px;
     text-align: center;
   }
-  .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  background-size: contain;
-  background-repeat: no-repeat;
-  filter: none; 
-}
   #objetos {
     display: flex;
     flex-direction: column;
@@ -333,6 +302,7 @@ body > footer {
   #texto-nosotros {
     font-size: 16px;
     padding: 10px;
+    text-align: start;
   }
   .contenedor-2 {
     grid-template-columns: 1fr;
@@ -344,7 +314,9 @@ body > footer {
   }
   #texttt {
     padding: 15px;
-    font-size: 16px;
+  }
+  #texttt h4 {
+    font-size: 15px;
   }
   .card-img-top {
     height: auto;
@@ -367,19 +339,6 @@ body > footer {
   #objetos-sedes p {
     font-size: 16px;
     margin-bottom: 20px;
-  }
-  .navbar-collapse {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-  }
-  .contenedor {
-    margin-left: 10px;
-  }
-
-  .navbar-toggler {
-    margin-left: auto;
   }
 }
 

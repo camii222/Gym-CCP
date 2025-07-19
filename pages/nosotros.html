@@ -14,33 +14,33 @@
     <meta name="owner" content="Gimnasios CCP">
 </head>
 <body>
-    <header class="bg-danger sticky-top">
-        <div class="container-fluid d-flex justify-content-between align-items-center py-2">
-            <div class="d-flex align-items-center gap-2">
-                <a href="../index.html">
-                    <img src="../img/logo.png" alt="logo" class="logo">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+            <section class="container-fluid d-flex justify-content-between align-items-center">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                    <img src="../img/logo.png" alt="Logo" class="logo"/>
+                    <span class="tituloo">GYM CCP</span>
                 </a>
-                <h1 class="tituloo mb-0">GYM CCP</h1>
-            </div>
-            <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-controls="menuMobile">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav class="d-none d-lg-block">
-                <ul class="navbar-nav flex-row gap-3 fs-5">
-                    <li class="nav-item"><a class="nav-link text-white" href="./nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="./productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="./rutinas.html">Rutinas</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="./sedes.html">Sedes</a></li>
-                </ul>
-            </nav>
-        </div>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-controls="menuMobile">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+                    <ul class="navbar-nav fs-5">
+                        <li class="nav-item"><a class="nav-link text-white" href="./nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./rutinas.html">Rutinas</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./sedes.html">Sedes</a></li>
+                    </ul>
+                </div>
+            </section>
+        </nav>
         <div class="offcanvas offcanvas-end bg-danger text-white" tabindex="-1" id="menuMobile" aria-labelledby="menuMobileLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="menuMobileLabel">Menú</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
             </div>
             <div class="offcanvas-body">
-                <ul class="navbar-nav fs-3 text-uppercase text-center w-100">
+                <ul class="navbar-nav fs-3 text-uppercase text-end">
                     <li class="nav-item"><a class="nav-link text-white" href="./nosotros.html">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="./productos.html">Productos</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="./rutinas.html">Rutinas</a></li>
@@ -57,7 +57,13 @@
     <section class="objetos-nosotros">
         <img src="../img/nosotros/gente.jpg" alt="" id="imagen-nosotros">
         <div>
-            <p id="texto-nosotros">Este gimnasio fue creado por Camila Campos en Mayo del año 2025 para su primer trabajo de la carrera de Desarrollo Full Stack, fue creado con mucho amor y ella espera que en un futuro este proyecto se haga realidad.</p>
+            <p id="texto-nosotros">GYM CCP nace en 2025 con el propósito de convertirse en un espacio de referencia para quienes buscan mejorar su salud, su fuerza y su bienestar general. Desde nuestros inicios, nos enfocamos en ofrecer mucho más que un gimnasio tradicional: creamos un entorno donde cada persona, sin importar su nivel, puede sentirse bienvenida, acompañada y motivada a superarse.</p>
+            <p id="texto-nosotros">Fundado por Camila Campos, el proyecto surge a partir de una profunda pasión por el entrenamiento, la disciplina y la vida activa. La idea fue clara desde el principio: construir gimnasios físicos que combinan calidad en infraestructura, un ambiente positivo y rutinas pensadas para objetivos reales. Queríamos formar una comunidad donde el esfuerzo individual se respete y se celebre, sin comparaciones ni presiones.
+            Nuestros gimnasios se destacan por ofrecer espacios amplios, equipamiento moderno y entrenadores capacitados que guían a cada persona de acuerdo a sus metas. Contamos con áreas de musculación, entrenamiento funcional, cardio y estiramiento, así como rutinas organizadas para diferentes niveles: desde principiantes hasta deportistas experimentados.</p>
+            <p id="texto-nosotros">El espíritu de GYM CCP se basa en el respeto, la constancia y el acompañamiento. No se trata solo de levantar pesas o correr kilómetros, sino de generar hábitos sostenibles que impacten positivamente en la vida diaria de quienes nos eligen. Sabemos que cada persona tiene su propio ritmo, y por eso nos enfocamos en el progreso personal, no en la comparación con otros.</p>
+            <p id="texto-nosotros">Este sitio web acompaña la propuesta física. Fue creado para acercar información clara y útil sobre nuestros espacios, rutinas sugeridas, productos recomendados y sedes disponibles. También funciona como una herramienta de inspiración para quienes están empezando o buscan retomar el hábito del entrenamiento.
+            En GYM CCP creemos que el cambio comienza por la acción, pero se sostiene con comunidad. Por eso, cada día trabajamos para que nuestros gimnasios sean un punto de encuentro, de energía, de crecimiento y de motivación compartida. Nos enorgullece ver a personas que llegan con dudas y, con el tiempo, descubren todo lo que son capaces de lograr.</p>
+            <p id="texto-nosotros">Gracias por ser parte de esta historia. Estás invitado a conocernos, sumarte y empezar tu propio camino en GYM CCP.</p>
         </div>
     </section>
     <footer>

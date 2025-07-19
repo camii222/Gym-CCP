@@ -15,33 +15,33 @@
     <meta name="owner" content="Gimnasios CCP">
 </head>
 <body>
-    <header class="bg-danger sticky-top">
-        <div class="container-fluid d-flex justify-content-between align-items-center py-2">
-            <div class="d-flex align-items-center gap-2">
-                <a href="../index.html">
-                    <img src="../img/logo.png" alt="logo" class="logo">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+            <section class="container-fluid d-flex justify-content-between align-items-center">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                    <img src="../img/logo.png" alt="Logo" class="logo"/>
+                    <span class="tituloo">GYM CCP</span>
                 </a>
-                <h1 class="tituloo mb-0">GYM CCP</h1>
-            </div>
-            <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-controls="menuMobile">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav class="d-none d-lg-block">
-                <ul class="navbar-nav flex-row gap-3 fs-5">
-                    <li class="nav-item"><a class="nav-link text-white" href="./nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="./productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="./rutinas.html">Rutinas</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="./sedes.html">Sedes</a></li>
-                </ul>
-            </nav>
-        </div>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-controls="menuMobile">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+                    <ul class="navbar-nav fs-5">
+                        <li class="nav-item"><a class="nav-link text-white" href="./nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./rutinas.html">Rutinas</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./sedes.html">Sedes</a></li>
+                    </ul>
+                </div>
+            </section>
+        </nav>
         <div class="offcanvas offcanvas-end bg-danger text-white" tabindex="-1" id="menuMobile" aria-labelledby="menuMobileLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="menuMobileLabel">Menú</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
             </div>
             <div class="offcanvas-body">
-                <ul class="navbar-nav fs-3 text-uppercase text-center w-100">
+                <ul class="navbar-nav fs-3 text-uppercase text-end">
                     <li class="nav-item"><a class="nav-link text-white" href="./nosotros.html">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="./productos.html">Productos</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="./rutinas.html">Rutinas</a></li>

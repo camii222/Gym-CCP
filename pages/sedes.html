@@ -15,33 +15,33 @@
     <meta name="owner" content="Gimnasios CCP">
 </head>
 <body>
-    <header class="bg-danger sticky-top">
-        <div class="container-fluid d-flex justify-content-between align-items-center py-2">
-            <div class="d-flex align-items-center gap-2">
-                <a href="../index.html">
-                    <img src="../img/logo.png" alt="logo" class="logo">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+            <section class="container-fluid d-flex justify-content-between align-items-center">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                    <img src="../img/logo.png" alt="Logo" class="logo"/>
+                    <span class="tituloo">GYM CCP</span>
                 </a>
-                <h1 class="tituloo mb-0">GYM CCP</h1>
-            </div>
-            <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-controls="menuMobile">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav class="d-none d-lg-block">
-                <ul class="navbar-nav flex-row gap-3 fs-5">
-                    <li class="nav-item"><a class="nav-link text-white" href="./nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="./productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="./rutinas.html">Rutinas</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="./sedes.html">Sedes</a></li>
-                </ul>
-            </nav>
-        </div>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-controls="menuMobile">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+                    <ul class="navbar-nav fs-5">
+                        <li class="nav-item"><a class="nav-link text-white" href="./nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./rutinas.html">Rutinas</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./sedes.html">Sedes</a></li>
+                    </ul>
+                </div>
+            </section>
+        </nav>
         <div class="offcanvas offcanvas-end bg-danger text-white" tabindex="-1" id="menuMobile" aria-labelledby="menuMobileLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="menuMobileLabel">Menú</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
             </div>
             <div class="offcanvas-body">
-                <ul class="navbar-nav fs-3 text-uppercase text-center w-100">
+                <ul class="navbar-nav fs-3 text-uppercase text-end">
                     <li class="nav-item"><a class="nav-link text-white" href="./nosotros.html">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="./productos.html">Productos</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="./rutinas.html">Rutinas</a></li>
@@ -61,10 +61,13 @@
             <p>Armada Argentina 2824, X5017 Córdoba</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d729.2535956497899!2d-64.23445178222912!3d-31.47517600295954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3d093392c45%3A0xbb0034c7994edf8e!2sSedo%20Gym!5e0!3m2!1ses-419!2sar!4v1747664303405!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <p>Av. Armada Argentina 2240, X5017 Córdoba</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1311.9841107701943!2d-64.22502009489847!3d-31.472872362451888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a30bf62ca217%3A0x1908ac9c5eab66a9!2sSEDO%20GYM!5e0!3m2!1ses-419!2sar!4v1747664355748!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Avenida Armada Argentina 2834, Río Negro 5220, X5000 Córdoba</p>
         </div>
-        <p>Nuestras 3 sedes estan abiertas de Lunes a Sábado de 8:00 a 22:00 hs. ¡Te esperamos!</p>
+        <div>
+            <p class="text-sedes">En GYM CCP creemos que el entorno también entrena. Por eso, contamos con tres sedes ubicadas estratégicamente en distintos puntos de Córdoba Capital, para que siempre tengas un espacio cómodo y accesible donde entrenar. Cada sede está equipada con máquinas de última generación, áreas funcionales y zonas de peso libre, ofreciendo variedad y calidad para todo tipo de entrenamiento.</p>
+            <p class="text-sedes"> Nuestro objetivo es que cada persona que entre a una de nuestras sedes sienta que está en un lugar pensado para su progreso. Cuidamos la limpieza, la atención, y sobre todo, el ambiente: buscamos que te sientas motivado desde que entrás hasta que terminás tu rutina.</p>
+            <p class="text-sedes">Estamos abiertos de lunes a sábado, de 8:00 a 22:00 hs, y nuestro equipo de profesionales está siempre listo para asesorarte. Podés visitarnos en cualquiera de nuestras direcciones, consultar disponibilidad, o simplemente acercarte a conocer el espacio. En GYM CCP, cada sede es una oportunidad para mejorar, y queremos que encuentres la que mejor se adapte a vos.</p>
+            <p class="text-sedes">¡Te esperamos en cualquiera de nuestras sedes para que empieces o continúes tu camino de entrenamiento con nosotros!</p>
+        </div>
     </section>
     <footer>
         <p>Creado por Cami Campos con mucho amor. Podes contactarnos en instagram como: @camicamposs._</p>
