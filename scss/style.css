@@ -114,14 +114,6 @@ header {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-form {
-  color: #ff0000;
-  padding: 2rem 0;
-}
-label { 
-  display: block; 
-  margin-bottom: 0.5rem; 
-}
 form input[type="text"],
 form input[type="number"] {
   border: 1px solid #ccc;
@@ -238,6 +230,30 @@ body > footer {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+.form-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-inline label {
+  margin: 0 5px;
+  white-space: nowrap;
+}
+
+.form-inline input[type="text"],
+.form-inline input[type="number"] {
+  margin: 0 5px;
+  padding: 5px 10px;
+  width: auto;
+}
+
+.form-inline input[type="submit"] {
+  margin: 0 5px;
 }
 
 @media (max-width: 425px) {
